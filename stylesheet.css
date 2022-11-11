@@ -1,0 +1,439 @@
+body{
+    margin: 0;
+    background-color: #F7F1E3;
+
+}
+
+.bg-container{
+
+    background-image: url("images/background/french-onion-bg.jpg") ;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100vw;
+  height:100vh;  
+  grid-column: 1/5;
+  grid-row: 1/5;
+
+}
+
+.grid-landingImage{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* spans to 27*/
+    grid-template-rows: repeat(4, 1fr); 
+    /*grid-auto-rows: minmax(100px, auto);*/
+    height: 100vh;
+    width: 100vw;
+  
+  }
+
+.logo-container {
+    padding-left: 30%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid-menu{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* spans to 27*/
+    grid-template-rows: repeat(12, 1fr); 
+    /*grid-auto-rows: minmax(100px, auto);*/
+    height: 100vh;
+    width: 100vw;
+  
+}
+
+p{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+h2{
+    font-family: big-caslon-fb, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    padding-top: 5%;
+
+}
+.header-menu{
+    grid-column:1/9;
+    grid-row: 1/2;
+   background-color: yellow;
+}
+
+.soup1 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup1 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+
+}
+
+.soup1:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup1:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup1:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup1{
+    transition: 0.5s;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-image: url("images/soup-menu-img/soup-img-1.png");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+
+.soup2{
+    transition: 0.5s;
+    grid-column: 4/6;
+    grid-row: 2/4;
+    background-image: url("images/soup-menu-img/soup-img-2.png");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup2 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup2 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+
+.soup2:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup2:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup2:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup3{
+    transition: 0.5s;
+    grid-column: 6/8;
+    grid-row: 2/4;
+    background-image: url("images/soup-menu-img/soup-img-3.png");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+
+.soup3 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup3 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup3:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup3:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup3:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup4{
+    transition: 0.5s;
+    grid-column: 2/4;
+    grid-row: 4/6;
+    background-image: url("images/soup-menu-img/soup-img-4.jpg");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+
+.soup4 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup4 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup4:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup4:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup4:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup5 {
+    transition: 0.5s;
+    grid-column: 4/6;
+    grid-row: 4/6;
+    background-image: url("images/soup-menu-img/soup-img-5.jpg");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup5 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup5 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup5:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup5:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup5:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+
+.soup6 {
+    transition: 0.5s;
+    grid-column: 6/8;
+    grid-row: 4/6;
+    background-image: url("images/soup-menu-img/soup-img-6.jpg");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup6 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup6 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup6:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup6:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup6:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+
+.soup7 {
+    transition: 0.5s;
+    grid-column: 2/4;
+    grid-row: 6/8;
+    background-image: url("images/soup-menu-img/soup-img-7.jpg");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup7 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup7 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup7:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup7:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup7:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+
+.soup8 {
+    transition: 0.5s;
+    grid-column: 4/6;
+    grid-row: 6/8;
+    background-image: url("images/soup-menu-img/soup-img-8.png");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup8 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup8 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup8:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup8:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup8:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.soup9 {
+    transition: 0.5s;
+    grid-column: 6/8;
+    grid-row: 6/8;
+    background-image: url("images/soup-menu-img/soup-img-9.png");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.soup9 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup9 h2 {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+}
+.soup9:hover {
+   box-shadow: 0 0 0 200px rgba(0,0,0,0.5) inset ;
+}
+.soup9:hover h2{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.soup9:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.8s;
+}
+.whitespace{
+    grid-column: 1/9;
+    grid-row: 8;
+    background-color: #F7F1E3;;
+    height: 20vh;
+}
+
+.footer-logo{
+    grid-row: 9;
+    grid-column: 4/6;
+    background-image: url("images/logo/soupee-logo.png");
+    width: auto;
+    height: 40vh;
+    background-size: cover;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+
