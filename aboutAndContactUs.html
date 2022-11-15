@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="togglebar-general.css">
+    <link rel="stylesheet" href="aboutAndContact-style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vok1hil.css">
+
+    <title>About and Contact Us</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="menu-page.html">Home & Menu </a>
+            </li>
+        </ul>
+        <div id="mySideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="seasonalSensations.html">Seasonal Sensations</a>
+      <a href="ourIngredients.html">Our Ingredients</a>
+      <a href="aboutAndContactUs.html">About & Contact Us</a>
+        </div>
+        <span style="font-size:50px;cursor:pointer;float:right;padding-right:15px;" onclick="openNav()">&#9776; </span>
+    
+    
+        <script>
+            function openNav() {
+              document.getElementById("mySideNav").style.width = "400px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySideNav").style.width = "0";
+            }
+            </script>
+    </nav>
+
+    <div class="grid-landing">
+        <div class="bg-container"></div>
+        <div class="ourStory-btn"> 
+            <a href="#goToOurStory">Our Story</a>
+
+        </div>
+        <div class="contactUs-btn"> 
+            <a href="#goToContactUs">Contact Us</a>
+        </div>
+       
+    </div>      <!-- grid menuImage ending tag-->
+
+    <div class="grid-landing" id ="goToOurStory">
+        <div class="ourStory-landing-img">
+    </div>
+
+    </div>   <!-- grid to ending ourstory image tag-->
+    
+    <div class="grid-landing" id="goToContactUs">
+       <div class="contactUs-landing"></div>
+       <div class="contactInfo-btn">
+        <div class="contactUs-text">
+            <h1> Contact Us</h1>
+        </div>
+        
+       </div>
+
+    </div>   <!-- grid to ending contact us image tag-->
+    
+</body>
+</html> 

@@ -1,0 +1,42 @@
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(200, 168, 142 ,1);
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 15px 15px 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-size: 46px;;
+    font-style: normal;
+    color:black;
+    display: block;
+    transition: 0.3s;
+    background-color:  rgba(200, 168, 142 ,1);
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.extra{
+    overflow-x: hidden;
+}

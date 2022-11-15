@@ -1,12 +1,20 @@
 body{
     margin: 0;
     background-color: #F7F1E3;
-
 }
 
-.bg-container{
+html{
+    scroll-behavior: smooth;
+}
+#goToMenu{
+    overflow-y: scroll;
+    background-size: contain;
+    text-align: center;
+}
 
-    background-image: url("images/background/french-onion-bg.jpg") ;
+
+.bg-container{
+    background-image: url("images/background/tomato2-bg.jpg") ;
     background-size:cover;
     background-repeat:no-repeat;
     width:100vw;
@@ -18,28 +26,34 @@ body{
 
 .grid-landingImage{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* spans to 27*/
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
-    /*grid-auto-rows: minmax(100px, auto);*/
     height: 100vh;
-    width: 100vw;
-  
-  }
-
-.logo-container {
-    padding-left: 30%;
-    grid-column: 1/2;
-    grid-row: 2/4;
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 100vw;  
 }
 
+.logo-container {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.menuText{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FA100E;
+    font-size: 96px;
+    text-align: center;
+    padding-bottom: 26px;
+
+}
 
 .grid-menu{
     display: grid;
     grid-template-columns: repeat(8, 1fr); /* spans to 27*/
-    grid-template-rows: repeat(12, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
     /*grid-auto-rows: minmax(100px, auto);*/
     height: 100vh;
     width: 100vw;
@@ -69,12 +83,31 @@ h2{
     justify-content: center;
     font-size: 32px;
     padding-top: 5%;
-
 }
+
 .header-menu{
-    grid-column:1/9;
+    grid-column:3/7;
     grid-row: 1/2;
-   background-color: yellow;
+    background-color:  #FDB10D;;
+    text-align: center;
+    border-radius: 40px;
+}
+.subheader-menu {
+    grid-column: 3/7;
+    grid-row: 2/3;  
+}
+
+.subheader-text{
+    font-family: swister, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: 000000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .soup1 p {
@@ -107,7 +140,7 @@ h2{
 .soup1{
     transition: 0.5s;
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 4/6;
     background-image: url("images/soup-menu-img/soup-img-1.png");
     width: auto;
     height: 50vh;
@@ -117,7 +150,7 @@ h2{
 .soup2{
     transition: 0.5s;
     grid-column: 4/6;
-    grid-row: 2/4;
+    grid-row: 4/6;
     background-image: url("images/soup-menu-img/soup-img-2.png");
     width: auto;
     height: 50vh;
@@ -152,7 +185,7 @@ h2{
 .soup3{
     transition: 0.5s;
     grid-column: 6/8;
-    grid-row: 2/4;
+    grid-row: 4/6;
     background-image: url("images/soup-menu-img/soup-img-3.png");
     width: auto;
     height: 50vh;
@@ -186,7 +219,7 @@ h2{
 .soup4{
     transition: 0.5s;
     grid-column: 2/4;
-    grid-row: 4/6;
+    grid-row: 6/8;
     background-image: url("images/soup-menu-img/soup-img-4.jpg");
     width: auto;
     height: 50vh;
@@ -220,7 +253,7 @@ h2{
 .soup5 {
     transition: 0.5s;
     grid-column: 4/6;
-    grid-row: 4/6;
+    grid-row: 6/8;
     background-image: url("images/soup-menu-img/soup-img-5.jpg");
     width: auto;
     height: 50vh;
@@ -254,7 +287,7 @@ h2{
 .soup6 {
     transition: 0.5s;
     grid-column: 6/8;
-    grid-row: 4/6;
+    grid-row: 6/8;
     background-image: url("images/soup-menu-img/soup-img-6.jpg");
     width: auto;
     height: 50vh;
@@ -288,7 +321,7 @@ h2{
 .soup7 {
     transition: 0.5s;
     grid-column: 2/4;
-    grid-row: 6/8;
+    grid-row: 8/1010;
     background-image: url("images/soup-menu-img/soup-img-7.jpg");
     width: auto;
     height: 50vh;
@@ -322,7 +355,7 @@ h2{
 .soup8 {
     transition: 0.5s;
     grid-column: 4/6;
-    grid-row: 6/8;
+    grid-row: 8/10;
     background-image: url("images/soup-menu-img/soup-img-8.png");
     width: auto;
     height: 50vh;
@@ -355,7 +388,7 @@ h2{
 .soup9 {
     transition: 0.5s;
     grid-column: 6/8;
-    grid-row: 6/8;
+    grid-row: 8/10;
     background-image: url("images/soup-menu-img/soup-img-9.png");
     width: auto;
     height: 50vh;
@@ -386,13 +419,13 @@ h2{
 }
 .whitespace{
     grid-column: 1/9;
-    grid-row: 8;
+    grid-row: 11;
     background-color: #F7F1E3;;
     height: 20vh;
 }
 
 .footer-logo{
-    grid-row: 9;
+    grid-row: 12;
     grid-column: 4/6;
     background-image: url("images/logo/soupee-logo.png");
     width: auto;
@@ -400,40 +433,6 @@ h2{
     background-size: cover;
 
 }
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
 
 
 
