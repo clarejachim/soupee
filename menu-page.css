@@ -75,6 +75,26 @@ a:active {
   
 }
 
+h5{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size:16px;
+    text-align: left;
+
+}
+h3{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size:64px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
 
 
 p{
@@ -115,16 +135,10 @@ h2{
 }
 
 .subheader-text{
-    font-family: swister, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: white;
+ 
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 .soup1 p {
@@ -471,12 +485,3 @@ h2{
 }
 
 
-h3{
-    font-family: swister, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #FA100E;
-    font-size: 16px;
-    text-align: center;
-    padding-bottom: 26px;
-}
