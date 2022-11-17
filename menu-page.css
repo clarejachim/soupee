@@ -10,15 +10,19 @@ html{
     overflow-y: scroll;
     background-size: contain;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
-
+footer{
+    background-color:pink;
+}
 
 .bg-container{
     background-image: url("images/background/tomato2-bg.jpg") ;
     background-size:cover;
     background-repeat:no-repeat;
     width:100vw;
-  height:100vh;  
+  height:80vh;  
   grid-column: 1/5;
   grid-row: 1/5;
 
@@ -28,13 +32,14 @@ html{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
-    height: 100vh;
+    height: 80vh;
     width: 100vw;  
 }
 
 .logo-container {
+    padding-top:20px;
     grid-column: 2/4;
-    grid-row: 2/4;
+    grid-row: 1/2;
     margin-left: auto;
     margin-right: auto;
     
@@ -47,18 +52,30 @@ html{
     font-size: 96px;
     text-align: center;
     padding-bottom: 26px;
+}
 
+.menu-btn{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+a:active { 
+    text-decoration: none; 
 }
 
 .grid-menu{
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* spans to 27*/
-    grid-template-rows: repeat(1, 1fr); 
+    grid-template-columns: repeat(3,  1fr);
+    grid-template-rows: repeat(3, 1fr); 
     /*grid-auto-rows: minmax(100px, auto);*/
     height: 100vh;
     width: 100vw;
+    align-items: center;
+    justify-content: center;
   
 }
+
+
 
 p{
     font-family: swister, sans-serif;
@@ -101,7 +118,7 @@ h2{
     font-family: swister, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: 000000;
+    color: white;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -139,22 +156,35 @@ h2{
 
 .soup1{
     transition: 0.5s;
-    grid-column: 2/4;
-    grid-row: 4/6;
-    background-image: url("images/soup-menu-img/soup-img-1.png");
-    width: auto;
-    height: 50vh;
-    background-size: cover;
+    grid-column: 1;
+    grid-row: 1; 
+    background-image: url("images/soup-menu-img/soup-img-1.jpg");
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+   
+}
+
+.text-div{
+    grid-column: 2/3;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    background-size:contain;
+   
 }
 
 .soup2{
     transition: 0.5s;
-    grid-column: 4/6;
-    grid-row: 4/6;
+    grid-column: 2;
+    grid-row: 1;
     background-image: url("images/soup-menu-img/soup-img-2.png");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
+ 
+   
 }
 .soup2 p {
     opacity: 0;
@@ -184,12 +214,13 @@ h2{
 
 .soup3{
     transition: 0.5s;
-    grid-column: 6/8;
-    grid-row: 4/6;
+    grid-column: 3;
+    grid-row: 1;
     background-image: url("images/soup-menu-img/soup-img-3.png");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
+
 }
 
 .soup3 p {
@@ -218,12 +249,12 @@ h2{
 
 .soup4{
     transition: 0.5s;
-    grid-column: 2/4;
-    grid-row: 6/8;
+    grid-column: 1;
+    grid-row: 2;
     background-image: url("images/soup-menu-img/soup-img-4.jpg");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
 }
 
 .soup4 p {
@@ -252,12 +283,13 @@ h2{
 
 .soup5 {
     transition: 0.5s;
-    grid-column: 4/6;
-    grid-row: 6/8;
+    grid-column: 2;
+    grid-row: 2;
     background-image: url("images/soup-menu-img/soup-img-5.jpg");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
+    
 }
 .soup5 p {
     opacity: 0;
@@ -283,15 +315,14 @@ h2{
     transition: 0.8s;
 }
 
-
 .soup6 {
     transition: 0.5s;
-    grid-column: 6/8;
-    grid-row: 6/8;
+    grid-column: 3;
+    grid-row: 2;
     background-image: url("images/soup-menu-img/soup-img-6.jpg");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
 }
 .soup6 p {
     opacity: 0;
@@ -317,16 +348,16 @@ h2{
     transition: 0.8s;
 }
 
-
 .soup7 {
     transition: 0.5s;
-    grid-column: 2/4;
-    grid-row: 8/1010;
+    grid-column: 1;
+    grid-row: 3;
     background-image: url("images/soup-menu-img/soup-img-7.jpg");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
 }
+
 .soup7 p {
     opacity: 0;
     transform: scale(0);
@@ -351,15 +382,14 @@ h2{
     transition: 0.8s;
 }
 
-
 .soup8 {
     transition: 0.5s;
-    grid-column: 4/6;
-    grid-row: 8/10;
+    grid-column: 2;
+    grid-row: 3;
     background-image: url("images/soup-menu-img/soup-img-8.png");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
 }
 .soup8 p {
     opacity: 0;
@@ -387,12 +417,12 @@ h2{
 
 .soup9 {
     transition: 0.5s;
-    grid-column: 6/8;
-    grid-row: 8/10;
+    grid-column: 3;
+    grid-row: 3;
     background-image: url("images/soup-menu-img/soup-img-9.png");
-    width: auto;
-    height: 50vh;
     background-size: cover;
+    height: 250px;
+    width: 250px;
 }
 .soup9 p {
     opacity: 0;
@@ -425,14 +455,28 @@ h2{
 }
 
 .footer-logo{
-    grid-row: 12;
-    grid-column: 4/6;
-    background-image: url("images/logo/soupee-logo.png");
-    width: auto;
-    height: 40vh;
-    background-size: cover;
+    grid-row: 1;
+    grid-column: 1/2;
 
 }
 
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    overflow: hidden;
+    background-color: rgba(200, 168, 142, 0.6); 
+    height: 30vh;
+    grid-gap: 3%;
+}
 
 
+h3{
+    font-family: swister, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FA100E;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 26px;
+}

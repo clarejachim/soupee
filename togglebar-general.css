@@ -1,42 +1,61 @@
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgba(200, 168, 142 ,1);
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
-  .sidenav a {
-    padding: 15px 15px 30px 32px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    backdrop-filter:blur(8px) ;
+    box-shadow: 1 20px 30px rgba(0,0,0,0.15);
+    background-color: rgba(200, 168, 142, 0.6); 
+    
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    display: inline-block;
     text-align: center;
-    text-decoration: none;
+}
+
+li a{
+    margin-left: 40px; 
+
+   
+}
+
+nav a{
     font-family: swister, sans-serif;
     font-weight: 700;
-    font-size: 46px;;
     font-style: normal;
-    color:black;
-    display: block;
-    transition: 0.3s;
-    background-color:  rgba(200, 168, 142 ,1);
-  }
-  
-  .sidenav a:hover {
-    color: white;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 2px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+    color: black;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
 
-.extra{
-    overflow-x: hidden;
+}
+nav a:hover{
+    color: white;
+}
+
+a {
+
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 96px;
 }
