@@ -62,7 +62,7 @@ figcaption{
     height: 80vh;
     display: flex;
     align-items: bottom;
-    padding-top: 20px;
+    padding-top: 25vh;
     overflow: hidden;
 
 }
@@ -138,8 +138,8 @@ figcaption{
 
 #slider-span4:target ~ .image-slider #img4,
 #slider-span4:target ~ .image-slider #button-4{
-    width: 30vw;
-    height: 50vh;
+    width: 40vw;
+    height: 60vh;
     background-color: transparent;
     filter: saturate(100%);
 }
