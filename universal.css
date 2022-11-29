@@ -1,0 +1,106 @@
+body{
+    background-color: #F7F1E3;
+
+}
+p{
+    font-family: swister, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    color: black;
+
+}
+
+
+h2{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 96px;
+}
+
+
+h3{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+}
+h4{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size:40px;
+    text-align: center;
+    
+}
+h5{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size:16px;
+    text-align: left;
+
+}
+
+
+h6{
+    font-family: swister, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    font-size: 54px;
+    text-align: center;
+    
+
+}
+
+h7{
+    font-family: swister, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    font-size: 32px;
+    text-align: justify;
+
+}
+
+#footer-font{
+    font-size: 19px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+.footer-logo{
+    grid-row: 1;
+    grid-column: 1/2;
+
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    overflow: hidden;
+    background-color: rgba(200, 168, 142, 0.6); 
+    height: 30vh;
+    grid-gap: 26px;
+  
+}
+
+#footer-padding{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+img.rounded-corners {
+    border-radius: 10px;
+  }

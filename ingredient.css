@@ -1,0 +1,268 @@
+
+
+
+
+.grid-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: auto;
+    
+}
+
+
+.header-text{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img-landing{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 60vh;
+    background-image: url("images/bonebroth/landing-img.jpg");
+}
+
+.info1{
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    
+}
+
+.info2{
+    grid-column: 1;
+    grid-row: 4;
+    text-align: justify;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.img1{
+    grid-column: 2;
+    grid-row: 4;
+    padding: 70px 20px 20px 150px;
+
+}
+.img2{
+    grid-column: 1;
+    grid-row: 5;
+    padding: 60px 20px 10px 50px;
+    
+}
+
+
+
+
+.textbox{
+    display:inline-block;
+    background: rgb(152, 67, 2);
+    width:auto;
+    height:auto;  
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 70px 50px 70px; /*top right bottom left*/
+    text-align: justify;  
+}
+.outline{
+    border: 2px solid #984302 ;
+    border-radius: 10px;
+    padding: 30px 70px 50px 70px;
+    margin: 10px 10px 10px 10px;
+}
+.info3{
+    grid-column: 2;
+    grid-row: 5;
+    text-align: justify;
+    padding: 20px 40px 20px 40px;
+  
+}
+.info4{
+    grid-column: 1/3;
+    grid-row:6;
+    text-align: center;
+}
+.info5{
+    grid-column: 1/3;
+    grid-row: 8;
+    text-align: center;
+}
+
+.footer-space{
+    grid-row:9;
+    grid-column: 1/3;
+}
+
+.cards{
+    grid-row: 7;
+    grid-column: 1/3;
+ 
+   
+}
+
+
+:root {
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#cards {
+	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+	@scroll-timeline cards-element-scrolls-in-body {
+		source: selector(body);
+		scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */
+			selector(#cards) start 1,
+			/* End when the start edge touches the start of the scrollport */
+			selector(#cards) start 0
+		;
+		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		time-range: 4s;
+	}
+
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+	
+	.card__content {
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-body;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+
+
+
+/** PAGE STYLING **/
+
+* { /* Poor Man's Reset */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header,
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+header {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+#cards {
+	list-style: none;
+	outline: calc(var(--outline-width) * 10) solid blue;
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+
+.card {
+	outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden;
+
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+
+
