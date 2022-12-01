@@ -19,11 +19,18 @@
 }
 
 .landing-text{
+    padding-top: 15%;
     grid-column: 2/4;
     grid-row: 2;
     text-align: center;
     
 }
+
+.title h2{
+    font-size: 96px;
+    color: #446CCF;
+}
+
 .slideshow-text{
     padding-right: 30vh;
     padding-left: 30vh;
@@ -68,21 +75,21 @@ figcaption{
 }
 
 .image-slider{
-    width: 100%;
-    height: 600px;
+    width: auto;
+    height: 40vh;
     position: absolute;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .7s;
-    padding-top: 10px;
+   
 }
 
 
 .img{
-   width: 300px;
-   height: 300px;
+   width: 35vh;
+   height: 15vw;
     object-fit: cover;
     position: relative;
     transition: .5s;
@@ -93,14 +100,14 @@ figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 30px 0 30px;
+    margin: 0 5% 0 5%;
 
 }
 
 .button{
     position: absolute;
-    width: 240px;
-    height: 370px;
+    width: 30vh;
+    height: 30vw;
     transition: .5s;
     background-color: (0,0,0,.4);
 
@@ -114,16 +121,17 @@ figcaption{
 #slider-span1:target ~ .image-slider #button-1{
     width: 30vw;
     height: 50vh;
+    padding-top:10%;
     background-color: transparent;
     filter: saturate(100%);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
 
 #slider-span2:target ~ .image-slider #img2,
 #slider-span2:target ~ .image-slider #button-2{
     width: 30vw;
     height: 50vh;
+    padding-top:10%;
     background-color: transparent;
     filter: saturate(100%);
 }
@@ -132,14 +140,16 @@ figcaption{
 #slider-span3:target ~ .image-slider #button-3{
     width: 30vw;
     height: 50vh;
+    padding-top: 10%;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider-span4:target ~ .image-slider #img4,
 #slider-span4:target ~ .image-slider #button-4{
-    width: 40vw;
-    height: 60vh;
+    width: 30vw;
+    height: 50vh;
+    padding-top:10%;
     background-color: transparent;
     filter: saturate(100%);
 }
@@ -148,6 +158,7 @@ figcaption{
 #slider-span5:target ~ .image-slider #button-5{
       width: 30vw;
     height: 50vh;
+    padding-top:10%;
     background-color: transparent;
     filter: saturate(100%);
 }
@@ -169,3 +180,153 @@ he deleted the middle one for some reason idk man
 
 
 
+@media(max-width: 800px){
+  
+
+   
+
+    .grid-landing{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        height: 80%;
+        width: 100%; 
+        grid-template-areas: 
+        "img-container"
+        "landing-text";
+
+    }
+
+
+    .img-container{
+    
+    grid-area: img-container;
+    height: auto;
+    width: 100vw;
+    }
+
+    .landing-text{
+        grid-row: 1;
+        grid-area: landing-text;
+        text-align: center;
+       
+      
+    }
+
+.subtext-format{
+    text-align: center;
+    padding-right: 5vh;
+    padding-left: 5vh;
+}
+
+    .landing-text h2{
+        font-size: 80px;
+    }
+
+    figcaption h3{
+        font-size: 24px;
+         text-align: center;
+     
+     }
+ 
+
+    .img{
+        width: 20vh;
+        height: 40vw;
+         object-fit: cover;
+         position: relative;
+         transition: .5s;
+         filter: saturate(10%)
+     }
+     .slide-container{
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        align-items: bottom;
+        padding-top: 25vh;
+        overflow: hidden;
+    
+    }
+     
+     .slides-div{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 .5% 0 .5%;
+     
+     }
+     
+     .button{
+         position: absolute;
+         width: 30vh;
+         height: 30vw;
+         transition: .5s;
+         background-color: (0,0,0,.4);
+     
+     }
+     
+     .button:hover{
+         background-color: (0,0,0,.2);
+     }
+     
+     #slider-span1:target ~ .image-slider #img1,
+     #slider-span1:target ~ .image-slider #button-1{
+         width: 50vw;
+         height: 50vh;
+         padding-top:10%;
+         background-color: transparent;
+         filter: saturate(100%);
+         
+     }
+     
+     #slider-span2:target ~ .image-slider #img2,
+     #slider-span2:target ~ .image-slider #button-2{
+        width: 50vw;
+        height: 50vh;
+         padding-top:10%;
+         background-color: transparent;
+         filter: saturate(100%);
+     }
+     
+     #slider-span3:target ~ .image-slider #img3,
+     #slider-span3:target ~ .image-slider #button-3{
+        width: 50vw;
+        height: 50vh;
+         padding-top: 10%;
+         background-color: transparent;
+         filter: saturate(100%);
+     }
+     
+     #slider-span4:target ~ .image-slider #img4,
+     #slider-span4:target ~ .image-slider #button-4{
+         width: 50vw;
+         height: 50vh;
+         padding-top:10%;
+         background-color: transparent;
+         filter: saturate(100%);
+     }
+     
+     #slider-span5:target ~ .image-slider #img5,
+     #slider-span5:target ~ .image-slider #button-5{
+        width: 50vw;
+         height: 50vh;
+         padding-top:10%;
+         background-color: transparent;
+         filter: saturate(100%);
+     }
+
+     #slider-span1:target ~ .image-slider {left: 20%;}
+#slider-span2:target ~ .image-slider {left: 5%;}
+
+/*
+#slider-span3:target ~ .imag-slider {left: 70%;}
+he deleted the middle one for some reason idk man
+*/
+
+#slider-span4:target ~ .image-slider {left: -5%;}
+#slider-span5:target ~ .image-slider {left: -20%;}
+     
+
+
+
+}

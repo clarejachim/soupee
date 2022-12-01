@@ -30,7 +30,6 @@ body{
 }
 
 
-
 .grid-abtUs-text{
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -143,10 +142,6 @@ body{
     padding-right:30px;
 }
 
-
-
-
-
 .contactUs-img{
     grid-row:8;
     grid-column: 1/7;
@@ -208,12 +203,7 @@ body{
     margin-right: 45px;
     margin-top: 45px;
   }
-  .container:hover .box {
-    transform: rotateY(25deg);
-  }
-  .container .box:hover ~ .box {
-    transform: rotateY(-25deg);
-  }
+ 
   .container .box:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
@@ -283,6 +273,120 @@ body{
   .container .box:hover .content p {
     transform: translateY(0px);
   }
+
+
+  @media(max-width: 800px){
+  
+
+    body{
+        height: 100vh;
+    }
+    .grid-landing{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 30vh;
+        grid-area: 
+        "img-container";
+    }
+
+    .img-container{
+        grid-area: img-container;
+        width: 100vw;
+        height: 30vh;
+        padding-bottom: 10vh;
+    }
+
+    .grid-abtUs-text{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+        "text1"
+        "img2"
+        "text3"
+        "text4"
+        "mission"
+        "footer-container"
+        ;
+    }
+
+    .text1 { grid-area: text1;
+        padding-top:0%;
+    padding-right: 5%;
+    padding-left: 5%; }
+.img2 { grid-area: img2; }
+.text3 { grid-area: text3;
+    padding-right: 5%;
+    padding-left: 5%;
+text-align: center; }
+.text4 { grid-area: text4;
+    padding-right: 5%;
+    padding-left: 5%; 
+text-align: center;}
+.mission { grid-area: mission; }
+.footer-container{grid-area: footer-container;
+
+}
+
+/*
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:"
+    "footer-logo"
+    "area1"
+    "area2"
+    "area3";
+}
+.footer-logo{
+    grid-area: footer-logo;
+   background-image: url("images/logo/soupee-logo-small.png");
+}
+
+.area1{
+    grid-area: area1;
+    grid-row:1;
+    text-align: center;
+}
+.area2{
+    grid-area: area2;
+    grid-row: 2;
+    text-align: center;
+}
+.area3{
+    grid-area: area3;
+    text-align: center;
+}
+
+.grid-landing{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "img-container"
+    ;
+}
+
+.img-container{
+    grid-area: img-container;
+ 
+    background-image: url("images/aboutAndContact/aboutUs-landing-img.jpg");
+   height: 40vh;
+   width: auto;
+    background-color: pink;
+}
+*/
+}
+
+
+
+
+
+
+
+
 
 
 

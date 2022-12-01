@@ -16,7 +16,7 @@
 
 .header-text{
     text-align: center;
-    padding-top: 10px;
+   
 }
 
 .img-landing{
@@ -33,8 +33,8 @@
     grid-column: 1/3;
     grid-row: 3;
     text-align: center;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 10%;
+    padding-left: 10%;
     
 }
 
@@ -42,24 +42,25 @@
     grid-column: 1;
     grid-row: 4;
     text-align: justify;
-    padding-right: 40px;
-    padding-left: 40px;
+ 
+    padding-left: 40%;
 }
 .img1{
     grid-column: 2;
     grid-row: 4;
-    padding: 70px 20px 20px 150px;
-
+	padding-top: .5%
 }
-.img2{
+.img2{ 
     grid-column: 1;
     grid-row: 5;
-    padding: 60px 20px 10px 50px;
-    
+    padding: 1% 0% 5% 45%;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url("images/bonebroth/img5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+     */
 }
-
-
-
 
 .textbox{
     display:inline-block;
@@ -68,20 +69,20 @@
     height:auto;  
     border-radius: 10px;
     text-align: center;
-    padding: 30px 70px 50px 70px; /*top right bottom left*/
+    padding: 10% 10% 12% 10%; /*top right bottom left*/
     text-align: justify;  
 }
 .outline{
     border: 2px solid #984302 ;
     border-radius: 10px;
-    padding: 30px 70px 50px 70px;
-    margin: 10px 10px 10px 10px;
+    padding: 10% 10% 10% 10%;
+    margin: 5% 5% 5% 5%;
 }
 .info3{
     grid-column: 2;
     grid-row: 5;
     text-align: justify;
-    padding: 20px 40px 20px 40px;
+    padding: 0% 35% 5% 0%;
   
 }
 .info4{
@@ -222,9 +223,9 @@ header {
 	gap: var(--card-margin);
 }
 
-.card {
+/* .card {
 	outline: var(--outline-width) solid hotpink;
-}
+} */
 
 .card__content {
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
@@ -263,6 +264,123 @@ header {
 	height: 100%;
 	object-fit: cover;
 }
+
+.title h2{
+	font-size: 80px;
+	color:#984302;
+}
+.description p{
+	font-size: 32px;
+	color:#984302;
+}
+
+@media (max-width: 800px) {
+
+	.grid-info{
+		display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+		"img-landing"
+		"info1"
+		"img1"
+		"info2"
+		"info3"
+		"img2"
+		"info4"
+		"cards"
+	
+		
+		;
+
+	}
+	.img-landing{
+		grid-area: img-landing;
+		height:20vh;
+	}
+
+	.info1{
+		grid-area: info1;
+		text-align: center;
+
+	}
+	.info2{
+		grid-area: info2;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.img1{
+		grid-area: img1;
+		align-items: center;
+		justify-content: center;
+		padding: 1% 10% 0% 3%
+		
+	}
+	.img2{
+		grid-area: img2;
+		text-align: center;
+		padding: 1% 0% 5% 0%; /*top right bottom left*/
+		
+	}
+
+	.info3{
+		grid-area: info3;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.info4{
+		grid-area: info4;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 1%
+	}
+	.cards{
+		grid-area: cards;
+	
+	}
+
+	figure{
+		align-items: center;
+		justify-self: center;
+		height: 20vh;
+		width: auto;
+	}
+	.title h2{
+		font-size: 42px;
+		color: #984302;
+	}
+
+	.description p{
+		font-size: 26px;
+		color: #984302;
+
+	}
+
+
+
+	.card__content > h2{
+		font-size: 32px;
+		
+	}
+
+	.card__content > div {
+		grid-area: text;
+		width: 80%;
+		place-self: center;
+		text-align: left;
+		padding-bottom: 10%;
+		display: grid;
+		gap: 1em;
+		place-items: start;
+	}
+
+
+}
+
 
 
 

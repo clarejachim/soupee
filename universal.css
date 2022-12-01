@@ -11,6 +11,14 @@ p{
 
 }
 
+h1{
+    font-family: swister, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #984302;
+    font-size: 60px;
+
+}
 
 h2{
     font-family: swister, sans-serif;
@@ -60,7 +68,7 @@ h6{
 
 }
 
-h7{
+.h7{
     font-family: swister, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -71,7 +79,8 @@ h7{
 }
 
 #footer-font{
-    font-size: 32px;
+    font-size: 28px;
+    color:#984302
 }
 
 .bold{
@@ -82,6 +91,7 @@ h7{
 .footer-logo{
     grid-row: 1;
     grid-column: 1/2;
+  
 
 }
 
@@ -92,15 +102,111 @@ h7{
     overflow: hidden;
     background-color: rgba(200, 168, 142, 0.6); 
     height: 30vh;
-    grid-gap: 26px;
+    grid-gap: 2%;
+    padding-bottom: 5%;
+    color:  #984302;
   
 }
 
+
 #footer-padding{
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-top: 5%;
+  
 }
 
 img.rounded-corners {
     border-radius: 10px;
   }
+
+
+
+  @media(max-width: 800px){
+    body{
+        height: 100vh;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        overflow: hidden;
+        background-color: rgba(200, 168, 142, 0.6); 
+        height: 100vh;
+        padding-bottom: 5%;
+        color:  #984302;
+        text-align: center;
+        font-size: 26px;
+        justify-content: center;
+        overflow: scroll;
+      
+    }
+    #footer-font{
+        font-size: 30px;
+        color:#984302;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    /* .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        overflow: hidden;
+        background-color: rgba(200, 168, 142, 0.6); 
+        height: 100vh;
+        width: auto;
+        grid-gap: 2%;
+        padding-bottom: 5%;
+        color:  #984302;
+        grid-area:
+        "footer-logo"
+      
+       
+        ;
+      
+    }
+
+    .footer-logo{
+        grid-area: footer-logo;
+        grid-row: 1;
+     
+        width: auto;
+ 
+    
+    }
+    .info1{
+        grid-area: info1;
+        grid-row: 2;
+  
+    
+    }
+    .info2{
+        grid-area: info2;
+        grid-row: 3;
+     
+    }
+    .info3{
+        grid-area: info3;
+        grid-row: 4;
+      
+    }
+
+   
+    h1{
+        font-size:24px;
+    }
+    h5{
+        text-align: center;
+    }
+    #footer-padding{
+        grid-area: footer-padding;
+        text-align: center;
+      
+    }
+   */
+    
+
+  }
+  
+
+
