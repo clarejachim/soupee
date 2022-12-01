@@ -1,8 +1,4 @@
 
-body{
-    background-color: #F7F1E3;
-}
-
 .grid-landing{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -29,7 +25,6 @@ body{
     grid-row: 3/4;
 }
 
-
 .grid-abtUs-text{
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -45,17 +40,13 @@ body{
     text-align: center;
 }
 
-
-
 .grid-abtUs-text > .img1 > img {
     width: 100%;
     height: auto;
-    padding-left: 20px;
-    
+    padding-left: 20px;   
 }
 
 .img2{
-
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: center;
@@ -79,41 +70,39 @@ body{
     padding-top: 5px;
     align-items: center;
     padding-left: 10px;
-
 }
-
 
 .text3{
     grid-row: 4;
     grid-column: 2/3;
-    padding-left:20px;
-   
+    padding-left:20px; 
 }
+
 .text4{
     grid-row: 5;
     grid-column:2/3;
     padding-left:20px;
 }
+
 .img5{
     grid-row: 4/6;
     grid-column: 3;
     align-items: center;
-    padding-left:5px;
-  
+    padding-left:5px; 
 }
+
 .img6{
     grid-row: 4/5;
     grid-column: 4;
     align-items: center;
     padding-left:5px;
-  
 }
+
 .img7{
     grid-row: 5/6;
     grid-column: 4;
     align-items: center;
-    padding-left:5px;
-  
+    padding-left:5px; 
 }
 
 .subheader1{
@@ -126,15 +115,15 @@ body{
     grid-row:10;
     grid-column: 1/6;
     align-items: center;
-    
-
 }
+
 .vision{
     grid-row:12;
     grid-column: 2/6;
     align-items: center;
     padding-right:30px;
 }
+
 .values{
     grid-row:14;
     grid-column: 2/5;
@@ -156,8 +145,7 @@ body{
 .grid-abtUs-text > .contactUs-img > img {
     width: 100vw;
     height: 50vh;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
 .contact-info{
@@ -173,16 +161,12 @@ body{
     text-align: center;
 }
 
-
-
 .footer-container{
     grid-row: 15;
     grid-column: 1/6;
-
 }
 
-
-  .container {
+.container {
     position: relative;
     width: 100vw;
     display: flex;
@@ -191,8 +175,9 @@ body{
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;
-  }
-  .container .box {
+}
+  
+.container .box {
     position: relative;
     width: 500px;
     height: 500px;
@@ -202,21 +187,23 @@ body{
     overflow: hidden;
     margin-right: 45px;
     margin-top: 45px;
-  }
- 
-  .container .box:hover {
+}
+
+.container .box:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-  }
-  .container .box .imgBx {
+}
+
+.container .box .imgBx {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .container .box .imgBx:before {
+}
+
+.container .box .imgBx:before {
     content: '';
     position: absolute;
     top: 0;
@@ -228,19 +215,22 @@ body{
     opacity: 0;
     transition: 0.5s;
     mix-blend-mode: multiply;
-  }
+}
+
   .container .box:hover .imgBx:before {
     opacity: 1;
-  }
-  .container .box .imgBx img {
+}
+
+.container .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .container .box .content {
+}
+
+.container .box .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -251,31 +241,35 @@ body{
     padding: 20px;
     align-items: flex-end;
     box-sizing: border-box;
-  }
-  .container .box .content h2 {
+}
+
+.container .box .content h2 {
     color: #fff;
     transition: 0.5s;
     margin-bottom: 5px;
     font-size: 60px;
     transform: translateY(200px);
     transition-delay: 0.3s;
-  }
-  .container .box:hover .content h2 {
+}
+
+.container .box:hover .content h2 {
     transform: translateY(0px);
-  }
-  .container .box .content p {
+}
+
+.container .box .content p {
     color: #fff;
     transition: 0.5s;
     font-size: 32px;
     transform: translateY(200px);
     transition-delay: 0.4s;
-  }
-  .container .box:hover .content p {
+}
+
+.container .box:hover .content p {
     transform: translateY(0px);
-  }
+}
 
 
-  @media(max-width: 800px){
+@media(max-width: 800px){
   
 
     body{
@@ -311,73 +305,31 @@ body{
         ;
     }
 
-    .text1 { grid-area: text1;
+    .text1 { 
+        grid-area: text1;
         padding-top:0%;
-    padding-right: 5%;
-    padding-left: 5%; }
-.img2 { grid-area: img2; }
-.text3 { grid-area: text3;
-    padding-right: 5%;
-    padding-left: 5%;
-text-align: center; }
-.text4 { grid-area: text4;
-    padding-right: 5%;
-    padding-left: 5%; 
-text-align: center;}
-.mission { grid-area: mission; }
-.footer-container{grid-area: footer-container;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 
-}
+    .img2 { grid-area: img2; }
 
-/*
-.footer-grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:"
-    "footer-logo"
-    "area1"
-    "area2"
-    "area3";
-}
-.footer-logo{
-    grid-area: footer-logo;
-   background-image: url("images/logo/soupee-logo-small.png");
-}
+    .text3 { 
+        grid-area: text3;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
+    .text4 {
+        grid-area: text4;
+        padding-right: 5%;
+        padding-left: 5%; 
+        text-align: center;
+    }
+    .mission { grid-area: mission; }
 
-.area1{
-    grid-area: area1;
-    grid-row:1;
-    text-align: center;
-}
-.area2{
-    grid-area: area2;
-    grid-row: 2;
-    text-align: center;
-}
-.area3{
-    grid-area: area3;
-    text-align: center;
-}
+    .footer-container{grid-area: footer-container;}
 
-.grid-landing{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas:
-    "img-container"
-    ;
-}
-
-.img-container{
-    grid-area: img-container;
- 
-    background-image: url("images/aboutAndContact/aboutUs-landing-img.jpg");
-   height: 40vh;
-   width: auto;
-    background-color: pink;
-}
-*/
 }
 
 

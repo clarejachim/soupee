@@ -2,6 +2,11 @@ body{
     background-color: #F7F1E3;
 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 p{
     font-family: swister, sans-serif;
     font-weight: 500;
@@ -91,8 +96,6 @@ h6{
 .footer-logo{
     grid-row: 1;
     grid-column: 1/2;
-  
-
 }
 
 .footer-grid{
@@ -105,22 +108,19 @@ h6{
     grid-gap: 2%;
     padding-bottom: 5%;
     color:  #984302;
-  
 }
 
 
 #footer-padding{
     padding-top: 5%;
-  
 }
 
 img.rounded-corners {
     border-radius: 10px;
   }
 
+@media(max-width: 800px){
 
-
-  @media(max-width: 800px){
     body{
         height: 100vh;
     }
@@ -146,66 +146,7 @@ img.rounded-corners {
         text-align: center;
         
     }
-
-    /* .footer-grid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        overflow: hidden;
-        background-color: rgba(200, 168, 142, 0.6); 
-        height: 100vh;
-        width: auto;
-        grid-gap: 2%;
-        padding-bottom: 5%;
-        color:  #984302;
-        grid-area:
-        "footer-logo"
-      
-       
-        ;
-      
-    }
-
-    .footer-logo{
-        grid-area: footer-logo;
-        grid-row: 1;
-     
-        width: auto;
- 
     
-    }
-    .info1{
-        grid-area: info1;
-        grid-row: 2;
-  
-    
-    }
-    .info2{
-        grid-area: info2;
-        grid-row: 3;
-     
-    }
-    .info3{
-        grid-area: info3;
-        grid-row: 4;
-      
-    }
-
-   
-    h1{
-        font-size:24px;
-    }
-    h5{
-        text-align: center;
-    }
-    #footer-padding{
-        grid-area: footer-padding;
-        text-align: center;
-      
-    }
-   */
-    
-
   }
   
 

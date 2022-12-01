@@ -1,5 +1,3 @@
-/* seasonal sensation stylesheet*/
-
 
 .grid-landing{
     display: grid;
@@ -8,6 +6,7 @@
     height:80vh;
     width: 100vw;   
 }
+
 .img-container {
     grid-column: 1/5;
     grid-row: 1/6;
@@ -22,8 +21,7 @@
     padding-top: 15%;
     grid-column: 2/4;
     grid-row: 2;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .title h2{
@@ -34,9 +32,7 @@
 .slideshow-text{
     padding-right: 30vh;
     padding-left: 30vh;
-
 }
-
 
 .subtext-format{
     text-align: center;
@@ -45,12 +41,9 @@
 }
 
 figcaption{
-   padding-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
-
 }
-
-
 
 .slideshow{
     padding: 0;
@@ -61,7 +54,6 @@ figcaption{
     overflow: hidden;
     align-items: center;
     background-color: rgb(240, 237, 237);
-
 }
 
 .slide-container{
@@ -71,7 +63,6 @@ figcaption{
     align-items: bottom;
     padding-top: 25vh;
     overflow: hidden;
-
 }
 
 .image-slider{
@@ -83,13 +74,11 @@ figcaption{
     justify-content: center;
     align-items: center;
     transition: .7s;
-   
 }
 
-
 .img{
-   width: 35vh;
-   height: 15vw;
+    width: 35vh;
+    height: 15vw;
     object-fit: cover;
     position: relative;
     transition: .5s;
@@ -101,7 +90,6 @@ figcaption{
     align-items: center;
     justify-content: center;
     margin: 0 5% 0 5%;
-
 }
 
 .button{
@@ -110,7 +98,6 @@ figcaption{
     height: 30vw;
     transition: .5s;
     background-color: (0,0,0,.4);
-
 }
 
 .button:hover{
@@ -166,24 +153,12 @@ figcaption{
 
 /* image position*/
 
-
 #slider-span1:target ~ .image-slider {left: 50%;}
 #slider-span2:target ~ .image-slider {left: 25%;}
-
-/*
-#slider-span3:target ~ .imag-slider {left: 70%;}
-he deleted the middle one for some reason idk man
-*/
-
 #slider-span4:target ~ .image-slider {left: -25%;}
 #slider-span5:target ~ .image-slider {left: -50%;}
 
-
-
 @media(max-width: 800px){
-  
-
-   
 
     .grid-landing{
         display: grid;
@@ -194,12 +169,9 @@ he deleted the middle one for some reason idk man
         grid-template-areas: 
         "img-container"
         "landing-text";
-
     }
 
-
     .img-container{
-    
     grid-area: img-container;
     height: auto;
     width: 100vw;
@@ -209,15 +181,13 @@ he deleted the middle one for some reason idk man
         grid-row: 1;
         grid-area: landing-text;
         text-align: center;
-       
-      
     }
 
-.subtext-format{
-    text-align: center;
-    padding-right: 5vh;
-    padding-left: 5vh;
-}
+    .subtext-format{
+        text-align: center;
+        padding-right: 5vh;
+        padding-left: 5vh;
+    }
 
     .landing-text h2{
         font-size: 80px;
@@ -225,35 +195,31 @@ he deleted the middle one for some reason idk man
 
     figcaption h3{
         font-size: 24px;
-         text-align: center;
-     
-     }
- 
-
+        text-align: center;
+    }
     .img{
-        width: 20vh;
-        height: 40vw;
+         width: 20vh;
+         height: 40vw;
          object-fit: cover;
          position: relative;
          transition: .5s;
          filter: saturate(10%)
-     }
-     .slide-container{
+    }
+    
+    .slide-container{
         width: 80vw;
         height: 80vh;
         display: flex;
         align-items: bottom;
         padding-top: 25vh;
         overflow: hidden;
-    
     }
      
-     .slides-div{
+    .slides-div{
          display: flex;
          align-items: center;
          justify-content: center;
          margin: 0 .5% 0 .5%;
-     
      }
      
      .button{
@@ -262,7 +228,6 @@ he deleted the middle one for some reason idk man
          height: 30vw;
          transition: .5s;
          background-color: (0,0,0,.4);
-     
      }
      
      .button:hover{
@@ -275,14 +240,13 @@ he deleted the middle one for some reason idk man
          height: 50vh;
          padding-top:10%;
          background-color: transparent;
-         filter: saturate(100%);
-         
+         filter: saturate(100%); 
      }
      
      #slider-span2:target ~ .image-slider #img2,
      #slider-span2:target ~ .image-slider #button-2{
-        width: 50vw;
-        height: 50vh;
+         width: 50vw;
+         height: 50vh;
          padding-top:10%;
          background-color: transparent;
          filter: saturate(100%);
@@ -290,8 +254,8 @@ he deleted the middle one for some reason idk man
      
      #slider-span3:target ~ .image-slider #img3,
      #slider-span3:target ~ .image-slider #button-3{
-        width: 50vw;
-        height: 50vh;
+         width: 50vw;
+         height: 50vh;
          padding-top: 10%;
          background-color: transparent;
          filter: saturate(100%);
@@ -315,18 +279,9 @@ he deleted the middle one for some reason idk man
          filter: saturate(100%);
      }
 
-     #slider-span1:target ~ .image-slider {left: 20%;}
+#slider-span1:target ~ .image-slider {left: 20%;}
 #slider-span2:target ~ .image-slider {left: 5%;}
-
-/*
-#slider-span3:target ~ .imag-slider {left: 70%;}
-he deleted the middle one for some reason idk man
-*/
-
 #slider-span4:target ~ .image-slider {left: -5%;}
 #slider-span5:target ~ .image-slider {left: -20%;}
      
-
-
-
 }
